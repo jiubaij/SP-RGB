@@ -1,5 +1,25 @@
 # YOLOv8 Multi-Modal Fusion (RGB + Sp) with AlignWarp + CMGA
+## Dataset
 
+The visible-light UAV images used in this work are from the ARD100 dataset released with YOLOMG. Since the original RGB images and videos are provided by the dataset authors, we do not redistribute the raw dataset in this repository.
+
+Please download the visible-light dataset from the official source:
+
+- ARD100 / YOLOMG dataset: <put_the_official_dataset_link_here>
+
+After downloading the dataset, place the RGB images and labels under the following structure:
+
+```text
+datasets/
+└── ARD100/
+    ├── images/
+    │   ├── train/
+    │   ├── val/
+    │   └── test/
+    └── labels/
+        ├── train/
+        ├── val/
+        └── test/
 ## Project Layout
 
 - `build_model.py`: quick sanity check (parse model YAML + initialize network)
